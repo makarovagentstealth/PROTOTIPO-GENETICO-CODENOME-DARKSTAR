@@ -102,3 +102,18 @@ python3 quantum_injector.py --entangle [GENE1] [GENE2] --inject```
 ## **Documentação**
 
 Para mais detalhes, consulte o GitHub do projeto
+
+Para mais conteudos acesse os outros projetos, websites e serviços disponiveis...
+___________________________________________________________________###__________________________
+
+https://renan21002200.wixsite.com/renansantoscyberseo
+
+https://counterintelligencecoursescybernetics.wordpress.com/
+
+https://cyberwarfarecounterintelligence.wordpress.com/
+
+https://cyberaptsecurity.wordpress.com/
+
+https://darkstrikaptevilcorpcounterintelligency.wordpress.com/
+
+https://safehousessecurity.wordpress.com/
