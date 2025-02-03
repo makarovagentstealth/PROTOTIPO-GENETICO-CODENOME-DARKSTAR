@@ -1,0 +1,131 @@
+Aqui estão os **principais comandos** para interagir com o `quantum_injector.py`, explicando como usar cada um deles e o que eles fazem:
+
+---
+
+### **Comandos Disponíveis**:
+1. **Entrelaçar Genes**:
+   - **Comando**:
+     ```bash
+     python quantum_injector.py --entangle GENE1 GENE2
+     ```
+   - **O Que Faz**:
+     - Entrelaça dois genes (ex.: `ESR1` e `PRL`) para simular uma correlação quântica entre eles.
+   - **Exemplo**:
+     ```bash
+     python quantum_injector.py --entangle ESR1 PRL
+     ```
+     Saída:
+     ```
+     Entrelaçamento Quântico: ESR1 ↔ PRL
+     ```
+
+2. **Injetar Mutação Quântica**:
+   - **Comando**:
+     ```bash
+     python quantum_injector.py --inject
+     ```
+   - **O Que Faz**:
+     - Injeta uma mutação em um dos genes entrelaçados, simulando o colapso de uma superposição quântica.
+   - **Exemplo**:
+     ```bash
+     python quantum_injector.py --inject
+     ```
+     Saída:
+     ```
+     Estado Quântico: Mutação em superposição (ESR1 ↔ PRL)
+     Colapso de Função de Onda: Mutação em PRL (Posição 3)
+     ```
+
+3. **Combinar Entrelaçamento e Injeção**:
+   - **Comando**:
+     ```bash
+     python quantum_injector.py --entangle GENE1 GENE2 --inject
+     ```
+   - **O Que Faz**:
+     - Primeiro entrelaça dois genes e, em seguida, injeta uma mutação quântica.
+   - **Exemplo**:
+     ```bash
+     python quantum_injector.py --entangle ESR1 AR --inject
+     ```
+     Saída:
+     ```
+     Entrelaçamento Quântico: ESR1 ↔ AR
+     Estado Quântico: Mutação em superposição (ESR1 ↔ AR)
+     Colapso de Função de Onda: Mutação em AR (Posição 2)
+
+     === Tecido Mamário (Female) ===
+     Gene ESR1 (estrogen): Nível = 50.00, DNA = ATGCGTA
+     Gene AR (testosterone): Nível = 31.50, DNA = TAGCTAG
+     Gene PRL (prolactin): Nível = 20.00, DNA = GGGACCC
+     ```
+
+4. **Verificar Status do Sistema**:
+   - **O Que Faz**:
+     - Após qualquer comando, o status do sistema é exibido automaticamente, mostrando os genes, níveis hormonais e sequências de DNA.
+   - **Exemplo de Saída**:
+     ```
+     === Tecido Mamário (Female) ===
+     Gene ESR1 (estrogen): Nível = 50.00, DNA = ATGCGTA
+     Gene AR (testosterone): Nível = 30.00, DNA = TAGCTAG
+     Gene PRL (prolactin): Nível = 21.34, DNA = GGGTCCC
+     ```
+
+---
+
+### **Como Funciona por Dentro**:
+1. **Entrelaçamento Quântico**:
+   - Dois genes são "entrelaçados" (adicionados a uma lista de pares). Isso simula uma correlação quântica entre eles.
+   - Exemplo: `ESR1` e `PRL` ficam entrelaçados.
+
+2. **Injeção de Mutação**:
+   - Um dos genes entrelaçados é escolhido aleatoriamente.
+   - Uma posição aleatória no gene é selecionada.
+   - A mutação é aplicada (ex.: substituição de uma base do DNA).
+   - O nível hormonal associado ao gene é ajustado.
+
+3. **Status do Sistema**:
+   - Após cada operação, o estado atual do sistema é exibido, mostrando:
+     - Sequências de DNA dos genes.
+     - Níveis hormonais.
+     - Sinal acústico ativo (se aplicável).
+
+---
+
+### **Exemplo Completo**:
+1. **Passo 1: Entrelaçar Genes**:
+   ```bash
+   python quantum_injector.py --entangle ESR1 PRL
+   ```
+   Saída:
+   ```
+   Entrelaçamento Quântico: ESR1 ↔ PRL
+   ```
+
+2. **Passo 2: Injetar Mutação**:
+   ```bash
+   python quantum_injector.py --inject
+   ```
+   Saída:
+   ```
+   Estado Quântico: Mutação em superposição (ESR1 ↔ PRL)
+   Colapso de Função de Onda: Mutação em PRL (Posição 3)
+
+   === Tecido Mamário (Female) ===
+   Gene ESR1 (estrogen): Nível = 50.00, DNA = ATGCGTA
+   Gene AR (testosterone): Nível = 30.00, DNA = TAGCTAG
+   Gene PRL (prolactin): Nível = 21.34, DNA = GGGTCCC
+   ```
+
+---
+
+### **Dicas Adicionais**:
+1. **Genes Disponíveis**:
+   - `ESR1` (estrogênio)
+   - `AR` (testosterona)
+   - `PRL` (prolactina)
+
+2. **Personalização**:
+   - Você pode adicionar mais genes ou ajustar as sequências de DNA no arquivo `genetic_engine.py`.
+
+3. **Testes**:
+   - Experimente combinar diferentes genes e observar como as mutações afetam os níveis hormonais.
